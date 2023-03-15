@@ -46,7 +46,7 @@ r = \sqrt{x^2+y^2+z^2}\\\
 \end{array}
 $$
 
-More information on spherical coordinates can be found in the lesson on [Geometry](/lessons/mathematics-physics-for-computer-graphics/geometry/spherical-coordinates-and-trigonometric-functions). Be careful though, note that in this less, we use the y-axis as the up vector, not the z-axis. These formulas can be implemented using the following C++ code. Keep in mind that if the vector is normalized its length is 1 thus \(r\) equals 1\. In that case, the division of z by r is not required of course. Also note that when x y and z are computed from the trigonometric function, the resulting vector is normalized. Finally, when the vector has normalized the value of the vector's y coordinates is the cosine of the angle \(\theta\):
+More information on spherical coordinates can be found in the lesson on [Geometry](/lessons/mathematics-physics-for-computer-graphics/geometry/spherical-coordinates-and-trigonometric-functions). Be careful though, note that in this lesson, we use the y-axis as the up vector, not the z-axis. These formulas can be implemented using the following C++ code. Keep in mind that if the vector is normalized its length is 1 thus \(r\) equals 1\. In that case, the division of z by r is not required of course. Also note that when x y and z are computed from the trigonometric function, the resulting vector is normalized. Finally, when the vector has normalized the value of the vector's y coordinates is the cosine of the angle \(\theta\):
 
 ```
 // assuming all angles in radians
@@ -112,7 +112,7 @@ This is known as the first [fundamental theorem of calculus](http://en.wikipedia
 
 If we get back to our example of a function \(F(t)\) giving us the distance of an object with respect to time, let's now imagine that we need to calculate the difference in position between time \(a\) and time \(b\) using velocity (which remember, is the derivative of \(F(t)\)). As an example, let's take \(a\) equals zero and \(b\) equal five seconds. In other words, we want to know how far has the object gone after five seconds. Obviously, computing this value using \(F(t)\), the antiderivative is easy; we just need to write:
 
-$$\begin{array}{l} d &=& F(b) - F(a) = F(5) - F(0) = 2*5^2-20^2=50\end{array}$$
+$$\begin{array}{l} d &=& F(b) - F(a) = F(5) - F(0) = 2*5^2-2*0^2=50\end{array}$$
 
 ![Figure 7: calculating the distance travelled between two times using velocity and time steps (velocity here is assumed to be constant).](/images/mathematics-of-shading/velocity2.gif?)
 
